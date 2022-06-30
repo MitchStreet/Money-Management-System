@@ -3,12 +3,23 @@
 
 # Import other pages and files
 import main_menu_page
-import manage_users_page
-import entry_page
-import view_users_page
 
 # Import Python modules
+import mysql.connector
 
+# Database
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword"
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("CREATE DATABASE mydatabase")
+
+for x in mycursor:
+  print(x)
 
 # Open main menu
-main_menu_page.main_menu()
+# main_menu_page.main_menu()
