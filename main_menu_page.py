@@ -22,7 +22,7 @@ def main_menu():
     print(Fore.BLUE + "[2]" + Fore.RESET + " Add a new user")
     print(Fore.BLUE + "[3]" + Fore.RESET + " View user history")
     print(Fore.BLUE + "[4]" + Fore.RESET + " View existing users and status")
-    print(Fore.BLUE + "[5]" + Fore.RESET + " Reset users")
+    print(Fore.BLUE + "[5]" + Fore.RESET + " Reset user")
     print(Fore.BLUE + "[6]" + Fore.RESET + " Exit")
 
     # User input and data validation for their input
@@ -49,8 +49,8 @@ def main_menu():
     elif choice == "4":  # View existing users and status
         print(Fore.BLUE + "'View existing users and status' selected" + Fore.RESET)
 
-    elif choice == "5":  # Reset users
-        print(Fore.BLUE + "'Reset users' selected" + Fore.RESET)
+    elif choice == "5":  # Reset user
+        print(Fore.BLUE + "'Reset user' selected" + Fore.RESET)
 
     elif choice == "6":  # Exit the program
         print(Fore.RED + "Exiting the program..." + Fore.RESET)
